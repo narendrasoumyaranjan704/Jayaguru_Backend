@@ -4,10 +4,13 @@ server:
 spring:
   application:
     name: temple-donation-backend
+
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/jayaguru}
-    username: ${DB_USERNAME:temple_app}
-    password: ${DB_PASSWORD:temple123}
+    url: ${DB_URL:jdbc:postgresql://ep-mute-cherry-ax35xw5n-pooler.c-4.us-east-2.aws.neon.tech:5432/neondb?sslmode=require}
+    username: ${DB_USERNAME:neondb_owner}
+    password: ${DB_PASSWORD:npg_gOCSIRvJMX37}
+    driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
